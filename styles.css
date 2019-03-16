@@ -201,3 +201,63 @@ tr img{
   width: 300px;
 
 }
+
+#main3{
+  display: grid;
+  grid-template-areas: 'navbar navbar'
+                       'form form'
+                      'footer footer';
+  grid-auto-rows: 18vh 500px 100px 0;
+  
+}   
+
+#form{
+  grid-area: form;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(foto31.jpg);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size:cover;
+
+ }
+
+ form{
+  display: flex;
+  flex-direction: column;
+  
+  
+ }
+
+ input[type=text] {
+  height       : 30px;
+  border-radius: 8px;
+  border       : none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea{
+  border-radius: 8px;
+  border       : none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+input[type=submit]{
+
+
+height: 32px;
+border-radius: 11px;
+border: none;
+color: rgb(216, 232, 241);
+font-weight: 800;
+background-color: #2aaf6a;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
