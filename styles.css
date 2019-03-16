@@ -9,9 +9,9 @@ main{
     display: grid;
     grid-template-areas: 'navbar navbar'
                          'sobre sobre'
-                        'botao1 botao2'
+                        'botao botao'
                         'footer footer';
-    grid-auto-rows: 12vh 550px 400px 100px;
+    grid-auto-rows: 18vh 550px 335px 100px;
     
 }           
 
@@ -30,14 +30,14 @@ navbar{
 }
 
 navbar img{
-  width:50px;
-  height:50px;
+  width:110px;
+
 }
 
 a{
   text-decoration:none;
   color:white;
-  font-size:20pt;
+  font-size:15pt;
 }
 
 a:hover{
@@ -87,12 +87,12 @@ a:hover{
 }
 
 
-#botao1{
-    grid-area: botao1;
+#botao{
+    grid-area: botao;
     background-color:  #d6d6c2;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-evenly;
   
   /*Fundo Pontilhado*/
   
@@ -126,51 +126,11 @@ a:hover{
   
 }
 
-#botao2{
-    grid-area: botao2;
-    background-color:  #d6d6c2;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-  /*Fundo Pontilhado*/
-  
-  background-image: -moz-linear-gradient(45deg, #666 25%, transparent 25%), 
-        -moz-linear-gradient(-45deg, #666 25%, transparent 25%), 
-        -moz-linear-gradient(45deg, transparent 75%, #666 75%), 
-        -moz-linear-gradient(-45deg, transparent 75%, #666 75%);
-    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #666), color-stop(.25, transparent)), 
-        -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #666), color-stop(.25, transparent)), 
-        -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #666)), 
-        -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #666));
-    background-image: -webkit-linear-gradient(45deg, #666 25%, transparent 25%), 
-        -webkit-linear-gradient(-45deg, #666 25%, transparent 25%), 
-        -webkit-linear-gradient(45deg, transparent 75%, #666 75%), 
-        -webkit-linear-gradient(-45deg, transparent 75%, #666 75%);
-    background-image: -o-linear-gradient(45deg, #666 25%, transparent 25%), 
-        -o-linear-gradient(-45deg, #666 25%, transparent 25%), 
-        -o-linear-gradient(45deg, transparent 75%, #666 75%), 
-        -o-linear-gradient(-45deg, transparent 75%, #666 75%);
-    background-image: linear-gradient(45deg, #666 25%, transparent 25%), 
-        linear-gradient(-45deg, #666 25%, transparent 25%), 
-        linear-gradient(45deg, transparent 75%, #666 75%), 
-        linear-gradient(-45deg, transparent 75%, #666 75%);
-    -moz-background-size: 2px 2px;
-    background-size: 2px 2px;
-    -webkit-background-size: 2px 2.1px; /* override value for webkit */
-   background-position: 0 0, 1px 0, 1px -1px, 0px 1px;
-  
-  
-		box-shadow: -50px 120px 57px -90px #000 inset, -44px -120px 80px -90px #000 inset;
-  
-  
-  
-}
 
 button{
   border-radius:100px;
-  width:400px;
-  height:280px;
+  width:200px;
+  height:200px;
   border:none;
   color:white;
   font-size:30pt;
@@ -181,7 +141,8 @@ button{
 button:hover{
   background-color:#f0c40f;
   transition:1s;
-  
+  cursor: pointer;
+  box-shadow: 3px 3px 3px black;
 }
 
 footer{
@@ -189,6 +150,54 @@ footer{
     background-color: #5c9bbb;
     color:white;
     display:flex;
-    align-itens:center;
+    align-items:center;
     justify-content:center;
+}
+
+
+
+#main2{
+  display: grid;
+  grid-template-areas: 'navbar navbar'
+                       'section section'
+                      'footer footer';
+  grid-auto-rows: 18vh 850px 100px 0;
+  
+}          
+
+section{
+  grid-area: section;
+  background-image: url('fundoexpertise.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+#psection{
+  width: 700px;
+}
+
+td{
+  height: 215px;
+  width: 300px;
+  background-color: rgba(139, 139, 139, 0.5);
+  
+}
+
+tr:hover{
+  background-color: rgb(63, 146, 224);
+  transition:1s;
+  cursor: pointer;
+}
+
+
+tr img{
+  height: 200px;
+  width: 300px;
+
 }
